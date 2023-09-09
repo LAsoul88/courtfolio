@@ -1,10 +1,19 @@
 import React from 'react';
 
-import './styles/Nav.css';
+import './styles/Nav.scss';
 
 const Nav = () => {
   return (
-    <div className="test">This is the Nav</div>
+    <header>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Projects</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </header>
   )
 }
 

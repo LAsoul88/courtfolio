@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --mode production",
-    "start": "webpack serve --mode development",
+    "build": "webpack",
+    "start": "webpack serve --open",
+    "watch": "webpack --watch",
     "typecheck": "tsc"
   },
   "repository": {
@@ -28,6 +29,8 @@
     "babel-loader": "^9.1.3",
     "css-loader": "^6.8.1",
     "html-webpack-plugin": "^5.5.3",
+    "sass": "^1.66.1",
+    "sass-loader": "^13.3.2",
     "style-loader": "^3.3.3",
     "typescript": "^5.2.2",
     "webpack": "^5.88.2",
