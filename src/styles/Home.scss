@@ -1,0 +1,31 @@
+h1 {
+  color: black;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 2rem;
+  margin-left: 5rem;
+  padding: 2rem;
+
+  .greeting {
+    display: flex;
+    flex-direction: column;
+    // padding: 16px;
+
+    .hello {
+      color: white;
+    }
+  }
+  .links {
+    display: flex;
+    gap: 2rem;
+    font-size: 3rem;
+
+    a {
+      display: flex;
+    }
+  }
+}

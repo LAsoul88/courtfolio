@@ -1,15 +1,9 @@
 html {
   height: 100%;
-
   background-repeat: no-repeat;
-
   background: hsla(148, 89%, 78%, 1);
-
   background: linear-gradient(225deg, hsla(148, 89%, 78%, 1) 0%, hsla(178, 78%, 33%, 1) 51%, hsla(210, 81%, 22%, 1) 100%);
-
   background: -moz-linear-gradient(225deg, hsla(148, 89%, 78%, 1) 0%, hsla(178, 78%, 33%, 1) 51%, hsla(210, 81%, 22%, 1) 100%);
-
   background: -webkit-linear-gradient(225deg, hsla(148, 89%, 78%, 1) 0%, hsla(178, 78%, 33%, 1) 51%, hsla(210, 81%, 22%, 1) 100%);
-
-  // filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#95f9c3", endColorstr="#0b3866", GradientType=1 );
+  font-size: 16px;
 }
