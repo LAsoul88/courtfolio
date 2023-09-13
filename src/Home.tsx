@@ -12,7 +12,7 @@ const Home = () => {
         <section className="greeting">
           <p className="hello">Hello</p>
           <p className="">I'm Courtney Kakebeen</p>
-          <p></p>
+          <p>Front End Developer</p>
         </section>
         <section className="links">
           <a href="https://github.com/LAsoul88" target="_blank"><GitHub fill="black" /></a>
