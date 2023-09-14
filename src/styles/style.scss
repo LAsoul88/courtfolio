@@ -1,9 +1,14 @@
+@import '~font-awesome/css/font-awesome.css';
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+
 html {
+  color: rgb(0, 2, 79);
+  font-family: 'Nunito', sans-serif;
   height: 100%;
   background-repeat: no-repeat;
-  background: hsla(148, 89%, 78%, 1);
-  background: linear-gradient(225deg, hsla(148, 89%, 78%, 1) 0%, hsla(178, 78%, 33%, 1) 51%, hsla(210, 81%, 22%, 1) 100%);
-  background: -moz-linear-gradient(225deg, hsla(148, 89%, 78%, 1) 0%, hsla(178, 78%, 33%, 1) 51%, hsla(210, 81%, 22%, 1) 100%);
-  background: -webkit-linear-gradient(225deg, hsla(148, 89%, 78%, 1) 0%, hsla(178, 78%, 33%, 1) 51%, hsla(210, 81%, 22%, 1) 100%);
+  background: #95F9C4;
+  background: linear-gradient(135deg, #95F9C4 0%, #1BDAD4 51%, #2585E4 100%);
+  background: -moz-linear-gradient(135deg, #95F9C4 0%, #1BDAD4 51%, #2585E4 100%);
+  background: -webkit-linear-gradient(135deg, #95F9C4 0%, #1BDAD4 51%, #2585E4 100%);
   font-size: 16px;
 }

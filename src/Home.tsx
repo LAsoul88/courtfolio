@@ -20,13 +20,13 @@ const Home = () => {
             target="_blank"
             className="link"
           >
-            <GitHub fill="black" /></a>
+            <GitHub fill="white" /></a>
           <a 
             href="https://www.linkedin.com/in/courtneykakebeen/" 
             target="_blank"
             className="link"
           >
-            <LinkedIn fill="black"
+            <LinkedIn fill="white"
           /></a>
         </section>
       </main>

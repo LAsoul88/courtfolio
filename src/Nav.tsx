@@ -9,10 +9,10 @@ const Nav = () => {
       <img src="" alt="logo" />
       <nav>
         <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/projects">Projects</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
+          <li><Link to="/" className="link">Home</Link></li>
+          <li><Link to="/about" className="link">About</Link></li>
+          <li><Link to="/projects" className="link">Projects</Link></li>
+          <li><Link to="/contact" className="link">Contact</Link></li>
           <button>Resume</button>
         </ul>
       </nav>
