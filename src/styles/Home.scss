@@ -20,12 +20,19 @@ main {
     }
   }
   .links {
+    height: 5rem;
     display: flex;
+    align-items: center;
     gap: 2rem;
-    font-size: 3rem;
+    font-size: 4rem;
 
     a {
       display: flex;
+      align-items: center;
+      padding: 1rem;
+    }
+    .link:hover {
+      background: #000;
     }
   }
 }
