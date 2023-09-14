@@ -29,10 +29,10 @@ main {
     a {
       display: flex;
       align-items: center;
-      padding: 1rem;
+      padding: .5rem .75rem;
     }
     .link:hover {
-      background: #000;
+      box-shadow: 0 0 3px 0 rgba(0, 0, 0, .5);
     }
   }
 }
