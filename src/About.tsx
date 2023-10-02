@@ -17,7 +17,14 @@ const About = () => {
           <ul>
             { skillList.map((skill) => {
               return (
-                <li>{skill}</li>
+                <li>
+                  <div>
+                    {skill.name}
+                  </div>
+                  <div>
+                    {skill.svg}
+                  </div>
+                </li>
               )
             })}
           </ul>
