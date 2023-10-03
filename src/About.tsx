@@ -18,10 +18,7 @@ const About = () => {
             { skillList.map((skill) => {
               return (
                 <li>
-                  <div>
-                    {skill.name}
-                  </div>
-                  <div>
+                  <div title={skill.name}>
                     {skill.svg}
                   </div>
                 </li>
