@@ -5,7 +5,6 @@
 main {
   display: flex;
   flex-direction: column;
-  color: white;
   font-size: 2rem;
   margin-left: 5rem;
   padding: 2rem;
@@ -15,9 +14,9 @@ main {
     flex-direction: column;
     // padding: 16px;
 
-    .hello {
-      color: white;
-    }
+    // .hello {
+    //   color: white;
+    // }
   }
   .links {
     height: 5rem;
