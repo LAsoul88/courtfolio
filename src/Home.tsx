@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Github, LinkedIn } from './images/images';
 
-import './styles/Home.scss';
+import './styles/Home';
 
 const Home = () => {
   return (

@@ -2,7 +2,7 @@ import React from 'react';
 
 import { skillList } from './util/skillList';
 
-import './styles/About.scss';
+import './styles/About';
 
 const About = () => {
   return (
@@ -15,7 +15,7 @@ const About = () => {
         <section className="skills">
           <h3>Skills</h3>
           <ul>
-            { skillList.map((skill) => {
+            { skillList.map(skill => {
               return (
                 <li>
                   <div title={skill.name}>
