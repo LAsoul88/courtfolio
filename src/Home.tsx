@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { GitHub, LinkedIn } from './images/images';
+import { Github, LinkedIn } from './images/images';
 
 import './styles/Home.scss';
 
@@ -20,14 +20,15 @@ const Home = () => {
             target="_blank"
             className="link"
           >
-            <GitHub fill="white" /></a>
+            <Github width="100" height="100" />
+          </a>
           <a 
             href="https://www.linkedin.com/in/courtneykakebeen/" 
             target="_blank"
             className="link"
           >
-            <LinkedIn fill="white"
-          /></a>
+            <LinkedIn width="100" height="100" />
+          </a>
         </section>
       </main>
     </>
