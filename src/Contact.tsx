@@ -1,7 +1,19 @@
 import React, { useState, FormEvent } from 'react';
 
 const Contact = () => {
-  const [form, setForm] = useState({ name: '', email: '', message: ''})
+  const [form, setForm] = useState({ 
+    name: '', 
+    email: '', 
+    message: '',
+  })
+
+  const handleChange = (e: FormEvent) => {
+    const target = e.target as HTMLInputElement
+    setForm({
+      ...form,
+      [target.id]: target.value,
+    });
+  }
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
@@ -18,9 +30,7 @@ const Contact = () => {
           id="name"
           name="name"
           value={form.name}
-          onChange={(e) =>
-            setForm(prev => ({ ...prev, name: e.target.value}))}
-          min={2}
+          onChange={handleChange}
           required
         />
         <label htmlFor="email">E-mail</label>
@@ -28,9 +38,7 @@ const Contact = () => {
           id="email"
           name="email"
           value={form.email}
-          onChange={(e) =>
-            setForm(prev => ({ ...prev, email: e.target.value}))}
-          min={2}
+          onChange={handleChange}
           required
         />
         <label htmlFor="message">Message</label>
@@ -38,11 +46,10 @@ const Contact = () => {
           id="message"
           name="message"
           value={form.message}
-          onChange={(e) =>
-            setForm(prev => ({ ...prev, message: e.target.value}))}
-          min={2}
+          onChange={handleChange}
           required
         />
+        <button type="submit">Submit</button>
       </form>
     </>
   )
