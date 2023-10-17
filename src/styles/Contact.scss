@@ -1,3 +1,54 @@
-h2 {
-  font-size: 2rem;
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    font-size: 2rem;
+  }
+  .contact-form {
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    
+    .form-top {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+  
+      .upper-container {
+        display: flex;
+        gap: .25rem;
+
+        .form-field-upper {
+          width: auto;
+        }
+      }
+    }
+    .form-bottom {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 1rem;
+  
+      .lower-container {
+        display: flex;
+        align-items: center;
+        gap: .25rem;
+        
+        .form-field-lower {
+          width: 100%;
+        }
+      }
+      button {
+        width: 4rem;
+        align-self: center;
+      }
+    }
+  }
 }
