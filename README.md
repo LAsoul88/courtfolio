@@ -12,4 +12,6 @@ I have just refactored this approach into a function that can take any of the ch
 Now to style the contact form. To begin, I'm going to aim for something simple like this: (https://sharethis.com/wp-content/uploads/2021/03/Compass.png). I may opt for something sleeker in the future, but first I want to get all elements organized.
 
 10/16/23
-Attempting to line up the Message and Name fields on the contact form. 
+Attempting to line up the Message and Name fields on the contact form. This will take more research and I might utilize a css framework to accomplish this task.
+
+Started working on setting up the resume button in the nav. I want the button to download my resume when clicked. While my initial solution of setting an href and download prop on an <a> element, it returns a message of no file available when clicked. I'm thinking this is an issue with the path being accessed when attempting to download.
