@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import Resume from './images/Courtney_Kakebeen_Full_Stack_Engineer.pdf';
+
 import './styles/Nav';
 
 const Nav = () => {
-  const resume = require('./util/Courtney_Kakebeen_Full_Stack_Engineer.docx');
 
   return (
     <header>
@@ -16,7 +17,7 @@ const Nav = () => {
           <li><Link to="/projects" className="link">Projects</Link></li>
           <li><Link to="/contact" className="link">Contact</Link></li>
           <a 
-            href={resume} download 
+            href={Resume} download 
             target="_blank"
           >Resume</a>
         </ul>
