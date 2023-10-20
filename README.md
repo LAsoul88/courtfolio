@@ -15,3 +15,13 @@ Now to style the contact form. To begin, I'm going to aim for something simple l
 Attempting to line up the Message and Name fields on the contact form. This will take more research and I might utilize a css framework to accomplish this task.
 
 Started working on setting up the resume button in the nav. I want the button to download my resume when clicked. While my initial solution of setting an href and download prop on an <a> element, it returns a message of no file available when clicked. I'm thinking this is an issue with the path being accessed when attempting to download.
+
+10/20/23
+Finally got the pdf download working. I was missing two things that prevented proper functioning:
+1. Webpack configuration for reading pdfs. A simple add of 'pdf' to the regex for the 'file-loader' test.
+2. A module declaration for '*.pdf' in a separate typing file as well as a "typeRoots" entry in the tsconfig.json file like this:
+{
+  "compilerOptions": {
+    "typeRoots": ["src/types"],
+  }
+}
