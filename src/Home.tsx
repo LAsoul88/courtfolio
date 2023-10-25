@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Github, LinkedIn } from './images/images';
+import { Typewriter } from './components/Typewriter';
 
 import './styles/Home';
 
@@ -12,7 +13,7 @@ const Home = () => {
         <section className="greeting">
           <p className="hello">Hello</p>
           <p className="">I'm Courtney Kakebeen</p>
-          <p>Front End Developer</p>
+          <Typewriter text="this works" delay={150} />
         </section>
         <section className="links">
           <a 
