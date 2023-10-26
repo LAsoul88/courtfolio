@@ -1,24 +1,37 @@
 import React, { useState, useEffect } from 'react';
 
 interface TypewriterProps {
-  text: string;
+  text: string[];
   delay: number;
+  infinite: boolean;
 }
 
-export const Typewriter = ({ text, delay }: TypewriterProps) => {
+export const Typewriter = ({ text, delay, infinite }: TypewriterProps) => {
+  const [textIndex, setTextIndex] = useState(0)
   const [currentText, setCurrentText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
-    if (currentIndex < text.length ) {
+    if (currentIndex < text[textIndex].length ) {
       const timeout = setTimeout(() => {
-        setCurrentText(prevText => prevText + text[currentIndex]);
+        setCurrentText(prevText => prevText + text[textIndex][currentIndex]);
         setCurrentIndex(prevIndex => prevIndex + 1);
       }, delay);
 
       return () => clearTimeout(timeout);
+
+    } else if (infinite) {
+      setTimeout(() => {
+        setCurrentIndex(0);
+        setCurrentText('');
+        if (textIndex < text.length - 1) {
+          setTextIndex(prevIndex => prevIndex + 1);
+        } else {
+          setTextIndex(0)
+        }
+      }, 2500)
     }
-  }, [currentIndex, delay, text]);
+  }, [currentIndex, delay, text, infinite]);
 
   return (
     <span>{currentText}</span>

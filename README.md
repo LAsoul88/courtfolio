@@ -25,3 +25,10 @@ Finally got the pdf download working. I was missing two things that prevented pr
     "typeRoots": ["src/types"],
   }
 }
+
+10/25/23
+Today I followed a tutorial on how to create a typewriter effect for text on my homepage (https://blog.logrocket.com/3-ways-implement-typing-animation-react/#:~:text=One%20of%20the%20ways%20to,create%20a%20component%20called%20Typewriter.).
+
+So far, it is operating as expected. Now, I am going to work on some logic to rotate which text displays. For instance, the first thing typed might say "Full Stack Developer," then it will erase and type out "Front End Engineer", etc.
+
+My thought is to create an array of text messages and have the Home component cycle them every 10 seconds or so. That length of time may be reduced depending on how this function actually plays out.

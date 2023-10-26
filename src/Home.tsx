@@ -6,6 +6,13 @@ import { Typewriter } from './components/Typewriter';
 import './styles/Home';
 
 const Home = () => {
+
+  const typewriterText: string[] = [
+    'Front End Engineer',
+    'Back End Engineer',
+    'Full Stack Engineer'
+  ];
+
   return (
     <>
       <h1></h1>
@@ -13,7 +20,7 @@ const Home = () => {
         <section className="greeting">
           <p className="hello">Hello</p>
           <p className="">I'm Courtney Kakebeen</p>
-          <Typewriter text="this works" delay={150} />
+          <Typewriter text={typewriterText} delay={150} infinite />
         </section>
         <section className="links">
           <a 
