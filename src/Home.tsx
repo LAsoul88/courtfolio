@@ -1,18 +1,27 @@
 import React from 'react';
 
 import { Github, LinkedIn } from './images/images';
+import { Typewriter } from './components/Typewriter';
 
 import './styles/Home';
 
 const Home = () => {
+
+  const typewriterText: string[] = [
+    'Front End Engineer',
+    'Back End Engineer',
+    'Full Stack Engineer'
+  ];
+
   return (
     <>
       <h1></h1>
       <main>
         <section className="greeting">
-          <p className="hello">Hello</p>
-          <p className="">I'm Courtney Kakebeen</p>
-          <p>Front End Developer</p>
+            Hello<br/>
+            I'm Courtney Kakebeen<br/>
+            <Typewriter text={typewriterText} delay={150} infinite />
+          {/* <div className="container"> */}
         </section>
         <section className="links">
           <a 
