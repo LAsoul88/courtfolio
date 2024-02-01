@@ -34,6 +34,8 @@ export const Typewriter = ({ text, delay, infinite }: TypewriterProps) => {
   }, [currentIndex, delay, text, infinite]);
 
   return (
-    <span>{currentText}</span>
+    <>
+      {currentText}
+    </>
   )
 }

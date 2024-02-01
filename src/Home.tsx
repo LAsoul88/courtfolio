@@ -18,9 +18,10 @@ const Home = () => {
       <h1></h1>
       <main>
         <section className="greeting">
-          <p className="hello">Hello</p>
-          <p className="">I'm Courtney Kakebeen</p>
-          <Typewriter text={typewriterText} delay={150} infinite />
+            Hello<br/>
+            I'm Courtney Kakebeen<br/>
+            <Typewriter text={typewriterText} delay={150} infinite />
+          {/* <div className="container"> */}
         </section>
         <section className="links">
           <a 
